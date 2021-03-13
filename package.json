@@ -1,0 +1,59 @@
+{
+  "name": "@programmerraj/jsonf",
+  "version": "1.0.0",
+  "description": "Json with functions.",
+  "license": "MIT",
+  "author": "Rajas Paranjpe (https://github.com/ChocolateLoverRaj)",
+  "main": "dist/umd/index.js",
+  "types": "dist/umd/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/umd/index.js"
+    },
+    "./": "./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chocolateloverraj/jsonf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chocolateloverraj/jsonf/issues"
+  },
+  "homepage": "https://github.com/chocolateloverraj/jsonf#readme",
+  "scripts": {
+    "lint": "eslint .",
+    "build:umd": "tsc --project tsconfig/umd",
+    "build:es": "tsc --project tsconfig/es",
+    "build": "npm run build:umd && npm run build:es",
+    "build:dev": "tsc",
+    "test": "mocha dist/test",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "last-element": "^1.0.1"
+  },
+  "devDependencies": {
+    "@programmerraj/json-transformer": "^3.1.0",
+    "@programmerraj/jsonv": "^2.1.0",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.33",
+    "@types/sinon": "^9.0.11",
+    "eslint": "^7.20.0",
+    "mocha": "^8.3.0",
+    "sinon": "^9.2.4",
+    "ts-standard": "^10.0.0",
+    "typescript": "^4.2.3"
+  },
+  "peerDependencies": {
+    "@programmerraj/json-transformer": "^3.1.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "json",
+    "functions"
+  ]
+}

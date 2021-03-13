@@ -1,0 +1,9 @@
+/lib
+/test
+/dist/lib
+/dist/test
+/.github
+/.vscode
+/.eslintrc.json
+/tsconfig.json
+/tsconfig

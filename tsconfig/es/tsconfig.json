@@ -1,0 +1,17 @@
+{
+  "include": [
+    "../../lib/*.ts"
+  ],
+  "compilerOptions": {
+    "rootDir": "../../lib",
+    "outDir": "../../dist/es",
+    "lib": [
+      "ES2020"
+    ],
+    "strictNullChecks": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "declaration": true,
+    "module": "ES6"
+  }
+}
